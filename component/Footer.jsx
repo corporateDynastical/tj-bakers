@@ -4,6 +4,7 @@ import { LuPhoneCall } from 'react-icons/lu'
 import { FaLocationDot } from 'react-icons/fa6'
 import { motion } from 'framer-motion'
 import style from '@/style/Footer.module.scss'
+import Link from 'next/link'
 
 const Footer = () => {
     return (
@@ -22,9 +23,15 @@ const Footer = () => {
                     <motion.span
                         animate={{ rotate: [10, 0, -10] }}
                         transition={{ duration: 1, repeat: Infinity }}
-                    ><LuPhoneCall /></motion.span>
+                    >
+                        <Link href={'tel:+918767646338'}>
+                            <LuPhoneCall />
+                        </Link>
+                    </motion.span>
                     <p>
-                        +91 87676 46338
+                        <Link href={'tel:+918767646338'}>
+                            +91 87676 46338
+                        </Link>
                     </p>
                     <p>Delivery & Takeaway from 11am-9pm, Pune</p>
                 </div>

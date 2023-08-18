@@ -4,26 +4,33 @@ import { LuPhoneCall } from 'react-icons/lu'
 import { AiFillFacebook, AiFillInstagram } from 'react-icons/ai'
 import { motion } from 'framer-motion'
 import style from '@/style/Navbar.module.scss'
+import Link from 'next/link'
 
 const Navbar = () => {
     return (
         <div className={style.container}>
             <div className={style.main}>
                 <div className={style.picture}>
-                    <Image src={'/logo.jpeg'} alt='ts bakers logo' fill />
+                    <Image src={'/logo_white.png'} alt='ts bakers logo' fill />
                 </div>
                 <div className={style.menu}>
-                    <motion.div 
-                    animate={{rotate: [10,0,-10]}}
-                    transition={{duration: 1, repeat: Infinity}}
-                    className={style.icon}>
-                        <LuPhoneCall />
+                    <motion.div
+                        animate={{ rotate: [10, 0, -10] }}
+                        transition={{ duration: 1, repeat: Infinity }}
+                        className={style.icon}>
+                        <Link href={'tel:+918767646338'}>
+                            <LuPhoneCall />
+                        </Link>
                     </motion.div>
+                    {/* <div className={style.icon}>
+                        <Link>
+                            <AiFillFacebook />
+                        </Link>
+                    </div> */}
                     <div className={style.icon}>
-                        <AiFillFacebook />
-                    </div>
-                    <div className={style.icon}>
-                        <AiFillInstagram />
+                        <Link href={'https://www.instagram.com/tj_bake.s/'} target='_blank'>
+                            <AiFillInstagram />
+                        </Link>
                     </div>
                 </div>
             </div>
