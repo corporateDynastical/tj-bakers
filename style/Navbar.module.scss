@@ -1,0 +1,198 @@
+$primary_color: #FDBE57;
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+
+    .main {
+        width: 100%;
+        max-width: 1280px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @media screen and (min-width: '1281px') {
+            padding: 0 10px;
+
+            .picture {
+                position: relative;
+                width: 120px;
+                height: 120px;
+            }
+
+            .menu {
+                display: flex;
+                align-items: center;
+                font-size: 1.6vw;
+                gap: 30px;
+                color: $primary_color;
+            }
+        }
+
+        @media screen and (max-width: '1280px') {
+            padding: 0 10px;
+
+            .picture {
+                position: relative;
+                width: 150px;
+                height: 150px;
+            }
+
+            .menu {
+                display: flex;
+                align-items: center;
+                font-size: 2.6vw;
+                gap: 30px;
+                color: $primary_color;
+            }
+        }
+
+        @media screen and (max-width: '1024px') {
+            padding: 0 10px;
+
+            .picture {
+                position: relative;
+                width: 120px;
+                height: 120px;
+            }
+
+            .menu {
+                display: flex;
+                align-items: center;
+                font-size: 2.6vw;
+                gap: 30px;
+                color: $primary_color;
+            }
+        }
+
+        @media screen and (max-width: '912px') {
+            padding: 0 10px;
+
+            .picture {
+                position: relative;
+                width: 180px;
+                height: 180px;
+            }
+
+            .menu {
+                display: flex;
+                align-items: center;
+                font-size: 5.2vw;
+                gap: 30px;
+                color: $primary_color;
+            }
+        }
+
+        @media screen and (max-width: '820px') {
+            padding: 0 10px;
+
+            .picture {
+                position: relative;
+                width: 170px;
+                height: 170px;
+            }
+
+            .menu {
+                display: flex;
+                align-items: center;
+                font-size: 5.2vw;
+                gap: 30px;
+                color: $primary_color;
+            }
+        }
+
+        @media screen and (max-width: '768px') {
+            padding: 0 10px;
+
+            .picture {
+                position: relative;
+                width: 150px;
+                height: 150px;
+            }
+
+            .menu {
+                display: flex;
+                align-items: center;
+                font-size: 5.2vw;
+                gap: 30px;
+                color: $primary_color;
+            }
+        }
+
+        @media screen and (max-width: '540px') {
+            padding: 0 10px;
+
+            .picture {
+                position: relative;
+                width: 110px;
+                height: 110px;
+            }
+
+            .menu {
+                display: flex;
+                align-items: center;
+                font-size: 5.6vw;
+                gap: 20px;
+                color: $primary_color;
+            }
+        }
+
+        @media screen and (max-width: '414px') {
+            padding: 0 10px;
+
+            .picture {
+                position: relative;
+                width: 120px;
+                height: 120px;
+            }
+
+            .menu {
+                display: flex;
+                align-items: center;
+                font-size: 7.6vw;
+                gap: 10px;
+                color: $primary_color;
+            }
+        }
+
+        @media screen and (max-width: '390px') {
+            padding: 0 10px;
+
+            .picture {
+                position: relative;
+                width: 120px;
+                height: 120px;
+            }
+
+            .menu {
+                display: flex;
+                align-items: center;
+                font-size: 7.6vw;
+                gap: 10px;
+                color: $primary_color;
+            }
+        }
+
+        @media screen and (max-width: '280px') {
+            padding: 0 10px;
+
+            .picture {
+                position: relative;
+                width: 70px;
+                height: 70px;
+            }
+
+            .menu {
+                display: flex;
+                align-items: center;
+                font-size: 7.6vw;
+                gap: 10px;
+                color: $primary_color;
+            }
+        }
+    }
+}
