@@ -16,13 +16,13 @@ $primary_color: #FDBE57;
             display: grid;
             grid-template-columns: auto auto auto;
             align-items: center;
-            padding: 20px 20px;
+            padding: 10px 20px;
             gap: 30px;
 
             .picture {
                 position: relative;
-                width: 150px;
-                height: 150px;
+                width: 120px;
+                height: 120px;
             }
 
             .address {
@@ -33,11 +33,11 @@ $primary_color: #FDBE57;
                 color: $primary_color;
 
                 span {
-                    font-size: 2vw;
+                    font-size: 1.6vw;
                 }
 
                 p {
-                    width: 80%;
+                    width: 60%;
                     text-align: center;
                     font-size: 1vw;
                 }
@@ -53,8 +53,8 @@ $primary_color: #FDBE57;
 
             .picture {
                 position: relative;
-                width: 200px;
-                height: 200px;
+                width: 150px;
+                height: 150px;
             }
 
             .address {

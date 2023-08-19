@@ -11,7 +11,7 @@ const Navbar = () => {
         <div className={style.container}>
             <div className={style.main}>
                 <div className={style.picture}>
-                    <Image src={'/logo_white.png'} alt='ts bakers logo' fill />
+                    <Image src={'/logo_white.png'} alt='ts bakers logo' width={50} height={50} layout='responsive' />
                 </div>
                 <div className={style.menu}>
                     <motion.div
@@ -22,11 +22,6 @@ const Navbar = () => {
                             <LuPhoneCall />
                         </Link>
                     </motion.div>
-                    {/* <div className={style.icon}>
-                        <Link>
-                            <AiFillFacebook />
-                        </Link>
-                    </div> */}
                     <div className={style.icon}>
                         <Link href={'https://www.instagram.com/tj_bake.s/'} target='_blank'>
                             <AiFillInstagram />
