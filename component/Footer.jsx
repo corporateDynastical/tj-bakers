@@ -11,7 +11,7 @@ const Footer = () => {
         <div className={style.container}>
             <div className={style.main}>
                 <div className={style.picture}>
-                    <Image src={'/logo_white.png'} alt='tj bakers' fill />
+                    <Image src={'/logo_white.png'} alt='tj bakers' width={50} height={50} layout='responsive' />
                 </div>
                 <div className={style.address}>
                     <span><FaLocationDot /></span>
