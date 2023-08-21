@@ -14,7 +14,9 @@ const Footer = () => {
                     <Image src={'/logo_white.png'} alt='tj bakers' width={50} height={50} layout='responsive' />
                 </div>
                 <div className={style.address}>
-                    <span><FaLocationDot /></span>
+                    <span
+                        className={style.icon}
+                    ><FaLocationDot /></span>
                     <p>
                         20 A Shiv Shakti co-op housing society, near Metrocity Health Club, Mayur Colony, Kothrud
                     </p>
@@ -23,6 +25,7 @@ const Footer = () => {
                     <motion.span
                         animate={{ rotate: [10, 0, -10] }}
                         transition={{ duration: 1, repeat: Infinity }}
+                        className={style.icon}
                     >
                         <Link href={'tel:+918767646338'}>
                             <LuPhoneCall />
@@ -33,7 +36,9 @@ const Footer = () => {
                             +91 87676 46338
                         </Link>
                     </p>
-                    <p>Delivery & Takeaway from 11am-9pm, Pune</p>
+                </div>
+                <div className={style.address}>
+                    <p> <span>Delivery & Takeaway from: </span> <br /> 11am-9pm, Pune</p>
                 </div>
             </div>
         </div>
