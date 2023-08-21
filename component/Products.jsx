@@ -1,11 +1,15 @@
 import Image from 'next/image'
+import localFont from 'next/font/local'
+const alga = localFont({
+    src: '../font/Alga-Bold.ttf'
+})
 import style from '@/style/Products.module.scss'
 
 const Products = () => {
     return (
         <div className={style.container}>
             <div className={style.main}>
-                <h1>Our Products</h1>
+                <h1 className={alga.className}>Our Products</h1>
                 <div className={style.products}>
                     <div className={style.product}>
                         <div className={style.picture}>
